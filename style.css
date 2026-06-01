@@ -109,3 +109,11 @@ footer {
     background: #eef6ff;
     padding: 60px 10%;
 }
+#solutions {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+#solutions h2 {
+    margin-bottom: 25px;
+}
