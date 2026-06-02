@@ -153,18 +153,64 @@ section h2 {
     background: #ffffff;
 }
 
-.solution-card {
-    overflow: hidden;
-}
+<section id="solutions">
 
-.solution-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
+    <h2>Featured Assessments & Automation Solutions</h2>
+
+    <p class="section-intro">
+        Practical tools used to identify automation opportunities,
+        estimate business impact, and support implementation planning.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>AI Proposal Generator</h3>
+
+            <p>
+                Demonstrates how AI can transform project requirements
+                into structured business proposals.
+            </p>
+
+            <div class="outcome-box">
+                Reduce proposal preparation time from hours to minutes.
+            </div>
+
+            <span>Demonstration Solution</span>
+        </div>
+
+        <div class="card">
+            <h3>AI Automation ROI Calculator</h3>
+
+            <p>
+                Quantifies potential labor savings and recovered staff capacity.
+            </p>
+
+            <div class="outcome-box">
+                Example Opportunity:
+                $38,220 annual labor savings and 546 staff hours recovered.
+            </div>
+
+            <span>Consulting Assessment Tool</span>
+        </div>
+
+        <div class="card">
+            <h3>AI Readiness Assessment</h3>
+
+            <p>
+                Evaluates organizational readiness for AI adoption.
+            </p>
+
+            <div class="outcome-box">
+                Identifies high-value automation opportunities and implementation priorities.
+            </div>
+
+            <span>Consulting Assessment Tool</span>
+        </div>
+
+    </div>
+
+</section>
 }
 
 .about {
