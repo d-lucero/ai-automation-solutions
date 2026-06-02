@@ -11,6 +11,8 @@ body {
     background: #ffffff;
 }
 
+/* HERO */
+
 .hero {
     background: linear-gradient(135deg, #0f172a, #1e3a8a);
     color: white;
@@ -55,6 +57,10 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    color: #93c5fd;
+}
+
 .hero-content {
     text-align: center;
     max-width: 850px;
@@ -72,7 +78,7 @@ nav a {
 }
 
 .hero-content h1 {
-    font-size: 3.4rem;
+    font-size: 3.5rem;
     line-height: 1.15;
     margin-bottom: 25px;
 }
@@ -82,6 +88,8 @@ nav a {
     margin-bottom: 35px;
 }
 
+/* BUTTONS */
+
 .btn {
     display: inline-block;
     background: #3b82f6;
@@ -90,11 +98,14 @@ nav a {
     padding: 15px 30px;
     border-radius: 6px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .btn:hover {
     background: #2563eb;
 }
+
+/* SECTIONS */
 
 section {
     padding: 80px 10%;
@@ -102,26 +113,31 @@ section {
 
 section h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 25px;
+    color: #0f172a;
 }
+
+.section-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    color: #555;
+}
+
+/* VALUE SECTION */
 
 .value {
-    text-align: center;
     background: #f8fafc;
+    text-align: center;
 }
 
-.value p,
-.about p,
-.section-intro {
+.value p {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
 }
 
-.section-intro {
-    margin-bottom: 40px;
-}
+/* GRID LAYOUT */
 
 .grid {
     display: grid;
@@ -130,17 +146,42 @@ section h2 {
     margin-top: 40px;
 }
 
+/* CARDS */
+
 .card {
-    background: #f5f5f5;
-    padding: 28px;
+    background: white;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    padding: 28px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
 }
 
 .card h3 {
     margin-bottom: 15px;
     color: #0f172a;
 }
+
+.card p {
+    color: #444;
+}
+
+/* OUTCOME BOX */
+
+.outcome-box {
+    background: #e0f2fe;
+    border-left: 4px solid #2563eb;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #0f172a;
+}
+
+/* LABELS */
 
 .card span {
     display: inline-block;
@@ -149,73 +190,19 @@ section h2 {
     font-weight: bold;
 }
 
-.solutions {
-    background: #ffffff;
-}
-
-<section id="solutions">
-
-    <h2>Featured Assessments & Automation Solutions</h2>
-
-    <p class="section-intro">
-        Practical tools used to identify automation opportunities,
-        estimate business impact, and support implementation planning.
-    </p>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>AI Proposal Generator</h3>
-
-            <p>
-                Demonstrates how AI can transform project requirements
-                into structured business proposals.
-            </p>
-
-            <div class="outcome-box">
-                Reduce proposal preparation time from hours to minutes.
-            </div>
-
-            <span>Demonstration Solution</span>
-        </div>
-
-        <div class="card">
-            <h3>AI Automation ROI Calculator</h3>
-
-            <p>
-                Quantifies potential labor savings and recovered staff capacity.
-            </p>
-
-            <div class="outcome-box">
-                Example Opportunity:
-                $38,220 annual labor savings and 546 staff hours recovered.
-            </div>
-
-            <span>Consulting Assessment Tool</span>
-        </div>
-
-        <div class="card">
-            <h3>AI Readiness Assessment</h3>
-
-            <p>
-                Evaluates organizational readiness for AI adoption.
-            </p>
-
-            <div class="outcome-box">
-                Identifies high-value automation opportunities and implementation priorities.
-            </div>
-
-            <span>Consulting Assessment Tool</span>
-        </div>
-
-    </div>
-
-</section>
-}
+/* ABOUT */
 
 .about {
     background: #f8fafc;
 }
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+/* CONTACT */
 
 .contact {
     background: #0f172a;
@@ -223,10 +210,16 @@ section h2 {
     text-align: center;
 }
 
+.contact h2 {
+    color: white;
+}
+
 .contact p {
     max-width: 700px;
     margin: 0 auto 30px auto;
 }
+
+/* FOOTER */
 
 footer {
     background: #020617;
@@ -235,7 +228,10 @@ footer {
     padding: 20px;
 }
 
+/* MOBILE */
+
 @media (max-width: 768px) {
+
     nav {
         flex-direction: column;
         gap: 20px;
@@ -262,13 +258,4 @@ footer {
     section {
         padding: 60px 7%;
     }
-}
-.outcome-box {
-    background: #e0f2fe;
-    border-left: 4px solid #2563eb;
-    padding: 12px;
-    margin: 15px 0;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    color: #0f172a;
 }
